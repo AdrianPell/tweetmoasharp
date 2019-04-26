@@ -67,7 +67,13 @@ namespace TweetSharp
 				return _response.ErrorContentEntity as TwitterErrors;
 			}
 		}
-		public virtual TwitterError Error
+        public virtual T GetErrors<T>()
+            where T: class
+        {
+            return _response.ErrorContentEntity as T;
+        }
+
+        public virtual TwitterError Error
 		{
 			get
 			{
