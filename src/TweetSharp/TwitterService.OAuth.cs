@@ -4,6 +4,7 @@ using System.Net;
 using Hammock;
 using Hammock.Authentication.OAuth;
 using Hammock.Web;
+using Hammock.Serialization;
 
 #if !SILVERLIGHT && !WINRT
 using System.Compat.Web;
@@ -19,10 +20,26 @@ using HttpUtility = System.Web.HttpUtility;
 
 namespace TweetSharp
 {
-	public partial class TwitterService
+	public partial class TwitterServiceBase
 	{
+        private RestClient InitializeOAuthClient()
+        {
+            _oauth = new RestClient
+            {
+                Authority = Globals.Authority,
+                Proxy = Proxy,
+                DecompressionMethods = DecompressionMethods.GZip,
+                GetErrorResponseEntityType = (request, @base) => typeof(TwitterErrors),
+#if SILVERLIGHT
+                HasElevatedPermissions = true
+#endif
+            };
+
+            return _oauth;
+        }
+
 #if !SILVERLIGHT && !WINRT
-		[Serializable]
+        [Serializable]
 #endif
 		private class FunctionArguments
 		{
@@ -116,7 +133,7 @@ namespace TweetSharp
 					return request;
 				};
 
-		private readonly RestClient _oauth;
+		private RestClient _oauth;
 		private const string AuthorizeUrl = Globals.Authority + "/oauth/authorize";
 		private const string AuthenticateUrl = Globals.Authority + "/oauth/authenticate";
 
@@ -340,28 +357,28 @@ namespace TweetSharp
 			GetRequestToken("", action);
 		}
 
-		public virtual void GetAccessTokenWithXAuth(string username, string password, Action<OAuthAccessToken, TwitterResponse> action)
-		{
-			var args = new FunctionArguments
-			{
-				ConsumerKey = _consumerKey,
-				ConsumerSecret = _consumerSecret,
-				Username = username,
-				Password = password
-			};
+        public virtual void GetAccessTokenWithXAuth(string username, string password, Action<OAuthAccessToken, TwitterResponse> action)
+        {
+            var args = new FunctionArguments
+            {
+                ConsumerKey = _consumerKey,
+                ConsumerSecret = _consumerSecret,
+                Username = username,
+                Password = password
+            };
 
-			var request = _xAuthQuery.Invoke(args);
+            var request = _xAuthQuery.Invoke(args);
 
-			_oauth.BeginRequest(request,
-													(req, resp, state) =>
-															{
-																Exception exception;
-																var entity = TryAsyncResponse(() =>
-																			{
-																		if (resp == null || resp.StatusCode != HttpStatusCode.OK)
-																		{
-																			return null;
-																		}
+            _oauth.BeginRequest(request,
+                                                    (req, resp, state) =>
+                                                            {
+                                                                Exception exception;
+                                                                var entity = TryAsyncResponse(() =>
+                                                                            {
+                                                                                if (resp == null || resp.StatusCode != HttpStatusCode.OK)
+                                                                                {
+                                                                                    return null;
+                                                                                }
 
 #if WINRT
 																						var query = new Windows.Foundation.WwwFormUrlDecoder(resp.Content);
@@ -373,23 +390,23 @@ namespace TweetSharp
                                                 ScreenName = query.GetFirstValueByName("screen_name") ?? "?"
                                             };
 #else
-																					var query = HttpUtility.ParseQueryString(resp.Content);
-																		var accessToken = new OAuthAccessToken
-																		{
-																			Token = query["oauth_token"] ?? "?",
-																			TokenSecret = query["oauth_token_secret"] ?? "?",
-																			UserId = Convert.ToInt64(query["user_id"] ?? "0"),
-																			ScreenName = query["screen_name"] ?? "?"
-																		};
+                                                                                var query = HttpUtility.ParseQueryString(resp.Content);
+                                                                                var accessToken = new OAuthAccessToken
+                                                                                {
+                                                                                    Token = query["oauth_token"] ?? "?",
+                                                                                    TokenSecret = query["oauth_token_secret"] ?? "?",
+                                                                                    UserId = Convert.ToInt64(query["user_id"] ?? "0"),
+                                                                                    ScreenName = query["screen_name"] ?? "?"
+                                                                                };
 #endif
-																					return accessToken;
-																	},
-																			out exception);
+                                                                                return accessToken;
+                                                                            },
+                                                                            out exception);
 
-																action(entity, new TwitterResponse(resp, exception));
-															}
-					);
-		}
+                                                                action(entity, new TwitterResponse(resp, exception));
+                                                            }
+                    );
+        }
 
 		public virtual void GetAccessToken(OAuthRequestToken requestToken, Action<OAuthAccessToken, TwitterResponse> action)
 		{
@@ -488,7 +505,7 @@ namespace TweetSharp
 			request.Path = string.Concat("account/verify_credentials", FormatAsString);
 
 			var credentials = (OAuthCredentials)request.Credentials;
-			var url = request.BuildEndpoint(_client);
+			var url = request.BuildEndpoint(_oauth);
 			var workflow = new OAuthWorkflow(credentials);
 
 			var method = request.Method.HasValue ? request.Method.Value : WebMethod.Get;

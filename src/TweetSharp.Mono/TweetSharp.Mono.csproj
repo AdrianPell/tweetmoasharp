@@ -90,6 +90,9 @@
     <Compile Include="..\TweetSharp\TwitterQuickReplyOption.cs">
       <Link>TwitterQuickReplyOption.cs</Link>
     </Compile>
+    <Compile Include="..\TweetSharp\TwitterServiceBase.cs">
+      <Link>TwitterServiceBase.cs</Link>
+    </Compile>
     <Compile Include="..\TweetSharp\TwitterUploadedMedia.cs">
       <Link>TwitterUploadedMedia.cs</Link>
     </Compile>

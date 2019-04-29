@@ -208,6 +208,9 @@
     <Compile Include="..\TweetSharp\TwitterService.OAuth.cs">
       <Link>TwitterService.OAuth.cs</Link>
     </Compile>
+    <Compile Include="..\TweetSharp\TwitterServiceBase.cs">
+      <Link>TwitterServiceBase.cs</Link>
+    </Compile>
     <Compile Include="..\TweetSharp\TwitterSleepTime.cs">
       <Link>TwitterSleepTime.cs</Link>
     </Compile>

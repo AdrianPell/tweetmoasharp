@@ -230,13 +230,13 @@ namespace TweetSharp
         <#= method.IsDeprecated ? "[Obsolete(\"Twitter has declared this method obsolete; it may cease to function at any time. Check https://dev.twitter.com/docs/api#deprecated for alternatives.\")]" : "" #>
 		public virtual <#= method.Type #> End<#= method.Name #>(IAsyncResult result) 
 		{
-			<# if ( method.Type == "void") { #> EndWithHammockNoResponse<#} else { #>return EndWithHammock<<#= method.Type #>><# } #>(result);
+			<# if ( method.Type == "void") { #> EndWithHammockNoResponse<#} else { #>return EndWithHammock<<#= method.Type #>><# } #>(<# switch((method.AuthorityName ?? "").ToUpper()){case "UPLOAD": #>_uploadMediaClient<# break; default: #>_client<#break; } #>, result);
 		}
 
 		<#= method.IsDeprecated ? "[Obsolete(\"Twitter has declared this method obsolete; it may cease to function at any time. Check https://dev.twitter.com/docs/api#deprecated for alternatives.\")]" : "" #>
 		public virtual <#= method.Type #> End<#= method.Name #>(IAsyncResult result, TimeSpan timeout) 
 		{
-			<# if ( method.Type == "void") { #> EndWithHammockNoResponse<#} else { #>return EndWithHammock<<#= method.Type #>><# } #>(result, timeout);
+			<# if ( method.Type == "void") { #> EndWithHammockNoResponse<#} else { #>return EndWithHammock<<#= method.Type #>><# } #>(<# switch((method.AuthorityName ?? "").ToUpper()){case "UPLOAD": #>_uploadMediaClient<# break; default: #>_client<#break; } #>, result, timeout);
 		}
 
 <# } #>

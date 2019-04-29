@@ -72,6 +72,7 @@
     <Compile Include="..\TweetSharp\TwitterService.cs" Link="TwitterService.cs" />
     <Compile Include="..\TweetSharp\TwitterService.generated.cs" Link="TwitterService.generated.cs" />
     <Compile Include="..\TweetSharp\TwitterService.OAuth.cs" Link="TwitterService.OAuth.cs" />
+    <Compile Include="..\TweetSharp\TwitterServiceBase.cs" Link="TwitterServiceBase.cs" />
     <Compile Include="..\TweetSharp\TwitterSleepTime.cs" Link="TwitterSleepTime.cs" />
     <Compile Include="..\TweetSharp\TwitterStatus.cs" Link="TwitterStatus.cs" />
     <Compile Include="..\TweetSharp\TwitterTimeZone.cs" Link="TwitterTimeZone.cs" />
