@@ -89,6 +89,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TwitterService.tt</DependentUpon>
     </Compile>
+    <Compile Include="TwitterServiceBase.cs" />
     <Compile Include="TwitterSleepTime.cs" />
     <Compile Include="TwitterTimeZone.cs" />
     <Compile Include="TwitterTrend.cs" />

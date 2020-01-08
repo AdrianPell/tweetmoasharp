@@ -5885,1081 +5885,1081 @@ namespace TweetSharp
         
 		public virtual TwitterConfiguration EndGetConfiguration(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterConfiguration>(result);
+			return EndWithHammock<TwitterConfiguration>(_client, result);
 		}
 
 		
 		public virtual TwitterConfiguration EndGetConfiguration(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterConfiguration>(result, timeout);
+			return EndWithHammock<TwitterConfiguration>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListTweetsMentioningMe(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListTweetsMentioningMe(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnUserTimeline(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnUserTimeline(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnHomeTimeline(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnHomeTimeline(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListRetweetsOfMyTweets(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListRetweetsOfMyTweets(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndRetweets(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndRetweets(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndGetTweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndGetTweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndDeleteTweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndDeleteTweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndSendTweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndSendTweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndRetweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndRetweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndUnretweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndUnretweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         [Obsolete("Twitter has declared this method obsolete; it may cease to function at any time. Check https://dev.twitter.com/docs/api#deprecated for alternatives.")]
 		public virtual TwitterStatus EndSendTweetWithMedia(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		[Obsolete("Twitter has declared this method obsolete; it may cease to function at any time. Check https://dev.twitter.com/docs/api#deprecated for alternatives.")]
 		public virtual TwitterStatus EndSendTweetWithMedia(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUploadedMedia EndUploadMedia(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUploadedMedia>(result);
+			return EndWithHammock<TwitterUploadedMedia>(_uploadMediaClient, result);
 		}
 
 		
 		public virtual TwitterUploadedMedia EndUploadMedia(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUploadedMedia>(result, timeout);
+			return EndWithHammock<TwitterUploadedMedia>(_uploadMediaClient, result, timeout);
 		}
 
         
 		public virtual TwitterChunkedMedia EndUploadMediaInit(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterChunkedMedia>(result);
+			return EndWithHammock<TwitterChunkedMedia>(_uploadMediaClient, result);
 		}
 
 		
 		public virtual TwitterChunkedMedia EndUploadMediaInit(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterChunkedMedia>(result, timeout);
+			return EndWithHammock<TwitterChunkedMedia>(_uploadMediaClient, result, timeout);
 		}
 
         
 		public virtual void EndUploadMediaAppend(IAsyncResult result) 
 		{
-			 EndWithHammockNoResponse(result);
+			 EndWithHammockNoResponse(_uploadMediaClient, result);
 		}
 
 		
 		public virtual void EndUploadMediaAppend(IAsyncResult result, TimeSpan timeout) 
 		{
-			 EndWithHammockNoResponse(result, timeout);
+			 EndWithHammockNoResponse(_uploadMediaClient, result, timeout);
 		}
 
         
 		public virtual UploadMediaResult EndUploadMediaFinalize(IAsyncResult result) 
 		{
-			return EndWithHammock<UploadMediaResult>(result);
+			return EndWithHammock<UploadMediaResult>(_uploadMediaClient, result);
 		}
 
 		
 		public virtual UploadMediaResult EndUploadMediaFinalize(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<UploadMediaResult>(result, timeout);
+			return EndWithHammock<UploadMediaResult>(_uploadMediaClient, result, timeout);
 		}
 
         
 		public virtual UploadMediaResult EndUploadMediaCheckStatus(IAsyncResult result) 
 		{
-			return EndWithHammock<UploadMediaResult>(result);
+			return EndWithHammock<UploadMediaResult>(_uploadMediaClient, result);
 		}
 
 		
 		public virtual UploadMediaResult EndUploadMediaCheckStatus(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<UploadMediaResult>(result, timeout);
+			return EndWithHammock<UploadMediaResult>(_uploadMediaClient, result, timeout);
 		}
 
         
 		public virtual TwitterSearchResult EndSearch(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterSearchResult>(result);
+			return EndWithHammock<TwitterSearchResult>(_client, result);
 		}
 
 		
 		public virtual TwitterSearchResult EndSearch(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterSearchResult>(result, timeout);
+			return EndWithHammock<TwitterSearchResult>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterDirectMessageResult EndSendDirectMessage(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterDirectMessageResult>(result);
+			return EndWithHammock<TwitterDirectMessageResult>(_client, result);
 		}
 
 		
 		public virtual TwitterDirectMessageResult EndSendDirectMessage(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterDirectMessageResult>(result, timeout);
+			return EndWithHammock<TwitterDirectMessageResult>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterDirectMessageResult EndGetDirectMessage(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterDirectMessageResult>(result);
+			return EndWithHammock<TwitterDirectMessageResult>(_client, result);
 		}
 
 		
 		public virtual TwitterDirectMessageResult EndGetDirectMessage(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterDirectMessageResult>(result, timeout);
+			return EndWithHammock<TwitterDirectMessageResult>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterDirectMessageListResult EndListDirectMessages(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterDirectMessageListResult>(result);
+			return EndWithHammock<TwitterDirectMessageListResult>(_client, result);
 		}
 
 		
 		public virtual TwitterDirectMessageListResult EndListDirectMessages(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterDirectMessageListResult>(result, timeout);
+			return EndWithHammock<TwitterDirectMessageListResult>(_client, result, timeout);
 		}
 
         
 		public virtual void EndDeleteDirectMessage(IAsyncResult result) 
 		{
-			 EndWithHammockNoResponse(result);
+			 EndWithHammockNoResponse(_client, result);
 		}
 
 		
 		public virtual void EndDeleteDirectMessage(IAsyncResult result, TimeSpan timeout) 
 		{
-			 EndWithHammockNoResponse(result, timeout);
+			 EndWithHammockNoResponse(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndListFriendIdsOf(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndListFriendIdsOf(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndListFollowerIdsOf(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndListFollowerIdsOf(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterFriendshipLookup> EndListFriendshipsFor(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterFriendshipLookup>>(result);
+			return EndWithHammock<IEnumerable<TwitterFriendshipLookup>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterFriendshipLookup> EndListFriendshipsFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterFriendshipLookup>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterFriendshipLookup>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndGetIncomingFriendRequests(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndGetIncomingFriendRequests(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndGetOutgoingFriendRequests(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndGetOutgoingFriendRequests(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndFollowUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndFollowUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUnfollowUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUnfollowUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterFriendship EndUpdateFriendship(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterFriendship>(result);
+			return EndWithHammock<TwitterFriendship>(_client, result);
 		}
 
 		
 		public virtual TwitterFriendship EndUpdateFriendship(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterFriendship>(result, timeout);
+			return EndWithHammock<TwitterFriendship>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterFriendship EndGetFriendshipInfo(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterFriendship>(result);
+			return EndWithHammock<TwitterFriendship>(_client, result);
 		}
 
 		
 		public virtual TwitterFriendship EndGetFriendshipInfo(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterFriendship>(result, timeout);
+			return EndWithHammock<TwitterFriendship>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListFriends(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListFriends(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListFollowers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListFollowers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterAccount EndGetAccountSettings(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterAccount>(result);
+			return EndWithHammock<TwitterAccount>(_client, result);
 		}
 
 		
 		public virtual TwitterAccount EndGetAccountSettings(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterAccount>(result, timeout);
+			return EndWithHammock<TwitterAccount>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndGetUserProfile(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndGetUserProfile(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndVerifyCredentials(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndVerifyCredentials(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterAccount EndUpdateAccountSettings(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterAccount>(result);
+			return EndWithHammock<TwitterAccount>(_client, result);
 		}
 
 		
 		public virtual TwitterAccount EndUpdateAccountSettings(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterAccount>(result, timeout);
+			return EndWithHammock<TwitterAccount>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUpdateDeliveryDevice(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUpdateDeliveryDevice(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUpdateProfile(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUpdateProfile(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUpdateProfileBackgroundImage(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUpdateProfileBackgroundImage(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUpdateProfileColors(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUpdateProfileColors(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUpdateProfileImage(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUpdateProfileImage(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListBlockedUsers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListBlockedUsers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndListBlockedUserIds(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndListBlockedUserIds(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndBlockUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndBlockUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUnblockUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUnblockUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndMuteUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndMuteUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUnmuteUser(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUnmuteUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<long> EndListMutedUserIds(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<long> EndListMutedUserIds(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<long>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<long>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListMutedUsers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListMutedUsers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterUser> EndListUserProfilesFor(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterUser> EndListUserProfilesFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndGetUserProfileFor(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndGetUserProfileFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterUser> EndSearchForUser(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterUser> EndSearchForUser(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual ProfileBanners EndGetProfileBannerFor(IAsyncResult result) 
 		{
-			return EndWithHammock<ProfileBanners>(result);
+			return EndWithHammock<ProfileBanners>(_client, result);
 		}
 
 		
 		public virtual ProfileBanners EndGetProfileBannerFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<ProfileBanners>(result, timeout);
+			return EndWithHammock<ProfileBanners>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUserSuggestions EndListSuggestedUsers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUserSuggestions>(result);
+			return EndWithHammock<TwitterUserSuggestions>(_client, result);
 		}
 
 		
 		public virtual TwitterUserSuggestions EndListSuggestedUsers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUserSuggestions>(result, timeout);
+			return EndWithHammock<TwitterUserSuggestions>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterUserSuggestions> EndListSuggestedUserCategories(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUserSuggestions>>(result);
+			return EndWithHammock<IEnumerable<TwitterUserSuggestions>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterUserSuggestions> EndListSuggestedUserCategories(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUserSuggestions>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterUserSuggestions>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterUser> EndGetSuggestedUserMembers(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterUser> EndGetSuggestedUserMembers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterUser>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListFavoriteTweets(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListFavoriteTweets(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndUnfavoriteTweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndUnfavoriteTweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterStatus EndFavoriteTweet(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterStatus>(result);
+			return EndWithHammock<TwitterStatus>(_client, result);
 		}
 
 		
 		public virtual TwitterStatus EndFavoriteTweet(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterStatus>(result, timeout);
+			return EndWithHammock<TwitterStatus>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterList> EndListListsFor(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterList>>(result);
+			return EndWithHammock<IEnumerable<TwitterList>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterList> EndListListsFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterList>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterList>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterList> EndListOwnedListsFor(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterList> EndListOwnedListsFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnList(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterStatus> EndListTweetsOnList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterStatus>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterStatus>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndRemoveListMember(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndRemoveListMember(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterList> EndListListMembershipsFor(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterList> EndListListMembershipsFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListListSubscribers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListListSubscribers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndFollowList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndFollowList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndVerifyListSubscription(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndVerifyListSubscription(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndUnfollowList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndUnfollowList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterList EndAddListMembers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterList>(result);
+			return EndWithHammock<TwitterList>(_client, result);
 		}
 
 		
 		public virtual TwitterList EndAddListMembers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterList>(result, timeout);
+			return EndWithHammock<TwitterList>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndVerifyListMembership(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndVerifyListMembership(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterUser> EndListListMembers(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterUser> EndListListMembers(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterUser>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterUser>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndAddListMember(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndAddListMember(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterList EndDeleteList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterList>(result);
+			return EndWithHammock<TwitterList>(_client, result);
 		}
 
 		
 		public virtual TwitterList EndDeleteList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterList>(result, timeout);
+			return EndWithHammock<TwitterList>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterList EndUpdateList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterList>(result);
+			return EndWithHammock<TwitterList>(_client, result);
 		}
 
 		
 		public virtual TwitterList EndUpdateList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterList>(result, timeout);
+			return EndWithHammock<TwitterList>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterList EndCreateList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterList>(result);
+			return EndWithHammock<TwitterList>(_client, result);
 		}
 
 		
 		public virtual TwitterList EndCreateList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterList>(result, timeout);
+			return EndWithHammock<TwitterList>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterList EndGetList(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterList>(result);
+			return EndWithHammock<TwitterList>(_client, result);
 		}
 
 		
 		public virtual TwitterList EndGetList(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterList>(result, timeout);
+			return EndWithHammock<TwitterList>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterCursorList<TwitterList> EndListSubscriptions(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result);
 		}
 
 		
 		public virtual TwitterCursorList<TwitterList> EndListSubscriptions(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterCursorList<TwitterList>>(result, timeout);
+			return EndWithHammock<TwitterCursorList<TwitterList>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterSavedSearch> EndListSavedSearches(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterSavedSearch>>(result);
+			return EndWithHammock<IEnumerable<TwitterSavedSearch>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterSavedSearch> EndListSavedSearches(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterSavedSearch>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterSavedSearch>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterSavedSearch EndGetSavedSearch(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result);
+			return EndWithHammock<TwitterSavedSearch>(_client, result);
 		}
 
 		
 		public virtual TwitterSavedSearch EndGetSavedSearch(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result, timeout);
+			return EndWithHammock<TwitterSavedSearch>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterSavedSearch EndCreateSavedSearch(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result);
+			return EndWithHammock<TwitterSavedSearch>(_client, result);
 		}
 
 		
 		public virtual TwitterSavedSearch EndCreateSavedSearch(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result, timeout);
+			return EndWithHammock<TwitterSavedSearch>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterSavedSearch EndDeleteSavedSearch(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result);
+			return EndWithHammock<TwitterSavedSearch>(_client, result);
 		}
 
 		
 		public virtual TwitterSavedSearch EndDeleteSavedSearch(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterSavedSearch>(result, timeout);
+			return EndWithHammock<TwitterSavedSearch>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterPlace EndGetPlace(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterPlace>(result);
+			return EndWithHammock<TwitterPlace>(_client, result);
 		}
 
 		
 		public virtual TwitterPlace EndGetPlace(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterPlace>(result, timeout);
+			return EndWithHammock<TwitterPlace>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterPlace> EndReverseGeocode(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterPlace>>(result);
+			return EndWithHammock<IEnumerable<TwitterPlace>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterPlace> EndReverseGeocode(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterPlace>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterPlace>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<TwitterPlace> EndGeoSearch(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<TwitterPlace>>(result);
+			return EndWithHammock<IEnumerable<TwitterPlace>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<TwitterPlace> EndGeoSearch(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<TwitterPlace>>(result, timeout);
+			return EndWithHammock<IEnumerable<TwitterPlace>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterTrends EndListLocalTrendsFor(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterTrends>(result);
+			return EndWithHammock<TwitterTrends>(_client, result);
 		}
 
 		
 		public virtual TwitterTrends EndListLocalTrendsFor(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterTrends>(result, timeout);
+			return EndWithHammock<TwitterTrends>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<WhereOnEarthLocation> EndListAvailableTrendsLocations(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(result);
+			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<WhereOnEarthLocation> EndListAvailableTrendsLocations(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(result, timeout);
+			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(_client, result, timeout);
 		}
 
         
 		public virtual IEnumerable<WhereOnEarthLocation> EndListClosestTrendsLocations(IAsyncResult result) 
 		{
-			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(result);
+			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(_client, result);
 		}
 
 		
 		public virtual IEnumerable<WhereOnEarthLocation> EndListClosestTrendsLocations(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(result, timeout);
+			return EndWithHammock<IEnumerable<WhereOnEarthLocation>>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterRateLimitStatusSummary EndGetRateLimitStatus(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterRateLimitStatusSummary>(result);
+			return EndWithHammock<TwitterRateLimitStatusSummary>(_client, result);
 		}
 
 		
 		public virtual TwitterRateLimitStatusSummary EndGetRateLimitStatus(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterRateLimitStatusSummary>(result, timeout);
+			return EndWithHammock<TwitterRateLimitStatusSummary>(_client, result, timeout);
 		}
 
         
 		public virtual TwitterUser EndReportSpam(IAsyncResult result) 
 		{
-			return EndWithHammock<TwitterUser>(result);
+			return EndWithHammock<TwitterUser>(_client, result);
 		}
 
 		
 		public virtual TwitterUser EndReportSpam(IAsyncResult result, TimeSpan timeout) 
 		{
-			return EndWithHammock<TwitterUser>(result, timeout);
+			return EndWithHammock<TwitterUser>(_client, result, timeout);
 		}
 
 		#endregion
